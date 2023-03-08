@@ -10,7 +10,7 @@ def build_heap(data):
         j = 1
         while 2*j+1<n:
             k = 2*j+1
-            if k+1 < n:
+            if k+1 < n and data[k+1] < data[k]:
                 k += 1
             if data[j] <= data[k]:
                 break
