@@ -7,7 +7,7 @@ def build_heap(data):
     # try to achieve  O(n) and not O(n2)
     n = len(data)
     for i in range(n // 2-1, -1, -1):
-        j = 1
+        j = i
         while 2*j+1 < n:
             k = 2*j+1
             if k+1 < n and data[k] < data[k+1]:
